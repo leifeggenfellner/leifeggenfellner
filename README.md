@@ -6,8 +6,7 @@
   </a>
  </p>
 
-I'm a **Student** in Trondheim, Norway. I'm currently working on my **bachelor’s degree** in **Informatics**. On the side I work as a **Sattelite Communications Engineer** in **Orbit NTNU**.
+I'm a **Developer** in Tromsø, Norway. I'm currently working as a fullstack developer at **Helse Nord IKT**.
 
-- ⭐ Student at NTNU.
-- ✅ I know `Python`, `Rust`, `TypeScript`, `JavaScript`, `Java`, `Svelte`, `SvelteKit`, `React`, `Next.js`, `C`, `C++`, `CSS`, `Tailwind CSS`, `PHP`, `MySQL`, `PostgreSQL`, `Docker`.
-- 💻 Student who loves programming.
+- ⭐ Fullstack Developer at Helse Nord IKT.
+- ✅ I know `Python`, `TypeScript`, `JavaScript`, `Java`, `Svelte`, `SvelteKit`, `React`, `Next.js`, `Vue`, `Angular`, `C`, `C++`, `CSS`, `Tailwind CSS`, `PHP`, `MySQL`, `PostgreSQL`, `Docker`.
