@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img"
+     aria-label="Leif Eggenfellner — Software Developer at Helse Nord IKT, Tromsø, Norway">
+  <title>Leif Eggenfellner — Software Developer</title>
+  <desc>Profile banner for Leif Eggenfellner, Software Developer at Helse Nord IKT in Tromsø, Norway</desc>
+
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0B1026"/>
+      <stop offset="100%" stop-color="#111936"/>
+    </linearGradient>
+
+    <!-- Aurora sweep -->
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#6D28D9" stop-opacity="0"/>
+      <stop offset="28%"  stop-color="#7C3AED" stop-opacity="0.22"/>
+      <stop offset="62%"  stop-color="#0891B2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0B1026" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Cyan accent line (fades right) -->
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#22D3EE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Ambient purple glow -->
+    <radialGradient id="glowPurple" cx="30%" cy="55%" r="60%">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect width="1200" height="340" fill="url(#bg)"/>
+
+  <!-- ── Aurora band ── -->
+  <ellipse cx="500" cy="80" rx="720" ry="115" fill="url(#aurora)" opacity="0.7"/>
+
+  <!-- ── Ambient glow (left) ── -->
+  <ellipse cx="180" cy="170" rx="390" ry="205" fill="url(#glowPurple)"/>
+
+  <!-- ── Orbital decoration (right) ── -->
+  <!-- Outer ring -->
+  <circle cx="1020" cy="155" r="118" fill="none" stroke="#22D3EE" stroke-width="0.7" opacity="0.12"/>
+  <!-- Middle ring -->
+  <circle cx="1020" cy="155" r="78"  fill="none" stroke="#A855F7" stroke-width="0.7" opacity="0.12"/>
+  <!-- Inner ring -->
+  <circle cx="1020" cy="155" r="38"  fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.10"/>
+  <!-- Focal body -->
+  <circle cx="1020" cy="155" r="5"   fill="#6D28D9" opacity="0.50"/>
+  <circle cx="1020" cy="155" r="3"   fill="#A855F7" opacity="0.60"/>
+  <!-- Satellite node — outer orbit upper-left -->
+  <circle cx="938"  cy="59"  r="3.5" fill="#22D3EE" opacity="0.65"/>
+  <!-- Satellite node — middle orbit lower-right -->
+  <circle cx="1090" cy="216" r="2.5" fill="#C4B5FD" opacity="0.50"/>
+  <!-- Crosshair -->
+  <line x1="980"  y1="155" x2="1060" y2="155" stroke="#334155" stroke-width="0.5" opacity="0.20"/>
+  <line x1="1020" y1="118" x2="1020" y2="192" stroke="#334155" stroke-width="0.5" opacity="0.20"/>
+  <!-- Data-link trace from satellite to focal body -->
+  <line x1="938"  y1="59"  x2="982"  y2="98"  stroke="#22D3EE" stroke-width="0.6" opacity="0.18"/>
+
+  <!-- ── Perspective grid (bottom strip) ── -->
+  <line x1="0"    y1="288" x2="1200" y2="288" stroke="#1E293B" stroke-width="0.7" opacity="0.45"/>
+  <line x1="0"    y1="305" x2="1200" y2="305" stroke="#1E293B" stroke-width="0.5" opacity="0.28"/>
+  <line x1="0"    y1="322" x2="1200" y2="322" stroke="#1E293B" stroke-width="0.4" opacity="0.16"/>
+  <!-- Converging lines to vanishing point at (580, 272) -->
+  <line x1="60"   y1="340" x2="580" y2="272" stroke="#1E293B" stroke-width="0.4" opacity="0.20"/>
+  <line x1="290"  y1="340" x2="580" y2="272" stroke="#1E293B" stroke-width="0.4" opacity="0.20"/>
+  <line x1="580"  y1="340" x2="580" y2="272" stroke="#1E293B" stroke-width="0.4" opacity="0.20"/>
+  <line x1="870"  y1="340" x2="580" y2="272" stroke="#1E293B" stroke-width="0.4" opacity="0.20"/>
+  <line x1="1140" y1="340" x2="580" y2="272" stroke="#1E293B" stroke-width="0.4" opacity="0.20"/>
+
+  <!-- ── Content ── -->
+  <!-- Cyan accent line above name -->
+  <rect x="80" y="103" width="350" height="1.5" fill="url(#accentLine)" rx="1"/>
+
+  <!-- Name -->
+  <text x="80" y="151"
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="46" font-weight="700" letter-spacing="-0.5" fill="#E5E7EB">Leif Eggenfellner</text>
+
+  <!-- Role -->
+  <text x="82" y="189"
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="19" font-weight="400" fill="#A855F7">Software Developer  ·  Helse Nord IKT</text>
+
+  <!-- Location -->
+  <text x="82" y="220"
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="15" font-weight="400" fill="#94A3B8">Tromsø, Norway</text>
+
+  <!-- Domain tags (monospace) -->
+  <text x="82" y="260"
+        font-family="'SFMono-Regular','Consolas','Liberation Mono',Menlo,monospace"
+        font-size="11.5" letter-spacing="1.5" fill="#C4B5FD" opacity="0.72">PLATFORM  ·  INFRASTRUCTURE  ·  REPRODUCIBLE SYSTEMS  ·  MODERN WEB</text>
+</svg>

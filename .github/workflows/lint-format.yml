@@ -1,0 +1,48 @@
+name: Lint & Format
+
+on:
+  push:
+    paths:
+      - "**.md"
+      - ".markdownlint.jsonc"
+      - ".prettierrc.json"
+      - ".github/workflows/lint-format.yml"
+  pull_request:
+    paths:
+      - "**.md"
+  workflow_dispatch:
+
+jobs:
+  lint-format:
+    runs-on: ubuntu-latest
+    # Skip commits already made by this workflow to prevent loops.
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install tools
+        run: npm install -g markdownlint-cli2 prettier
+
+      # Prettier normalises whitespace, blank lines, and list markers
+      - name: Format with Prettier
+        run: prettier --write "**/*.md"
+
+      # markdownlint --fix handles trailing spaces, trailing punctuation, blank lines, etc.
+      # Rules that require design decisions (MD033, MD036, MD041) are configured in .markdownlint.jsonc
+      - name: Lint & auto-fix with markdownlint
+        run: markdownlint-cli2 --fix "**/*.md"
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "*.md" "**/*.md"
+          git diff --staged --quiet || git commit -m "style: auto-format markdown [skip ci]"
+          git push

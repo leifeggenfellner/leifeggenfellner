@@ -1,0 +1,43 @@
+{
+  // Enable all default rules, then override below.
+  "default": true,
+
+  // MD041: First line must be a top-level heading.
+  // Profile READMEs conventionally start with a hero image — disable this rule.
+  "MD041": false,
+
+  // MD033: No inline HTML.
+  // A subset of HTML is genuinely required in GitHub profile READMEs:
+  //   <img width="100%">          — responsive hero scaling
+  //   <table> / <tr> / <td>       — side-by-side card layout
+  //   <p>                         — side-by-side image block
+  //   <strong> / <br> / <code>    — styled content inside table cells (Markdown doesn't render inside <td>)
+  //   <picture> / <source>        — dark/light theme image switching if used later
+  "MD033": {
+    "allowed_elements": [
+      "img",
+      "picture",
+      "source",
+      "table",
+      "thead",
+      "tbody",
+      "tr",
+      "th",
+      "td",
+      "p",
+      "strong",
+      "em",
+      "br",
+      "code",
+    ],
+  },
+
+  // MD036: Emphasis used instead of a heading.
+  // Italic descriptive text directly beneath a section heading is intentional styling, not a heading.
+  "MD036": false,
+
+  // MD013: Line length.
+  // Tables, URLs, and prose cannot be meaningfully wrapped without breaking GitHub rendering.
+  // GitHub wraps all content in the browser anyway, so this rule adds no value here.
+  "MD013": false,
+}
